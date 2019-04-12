@@ -14,14 +14,25 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## launch the project
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+In package json in "scripts" add:
+"start": "ng serve --port 8000" in order to run npm start on port 8000 directly
+ 
+## Public API
 
-## Running end-to-end tests
+The chosen API is https://api.coinpaprika.com/v1/coins
+The API allows to display all bitcoins as well as their details.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Display all Bitcoin
 
-## Further help
+The display of bitcoin list respects the responsiveness: for tablets displays 4 bitcoins per row, for phones displays 2 bitcoins per row and for desktops displays 6 bitcoins per row. 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+The display of bitcoin contains 10 bitcoins per default. It contains pagination which allows for 10 bitcoins per page to be displayed.
+The search Bar allows to find bitcoins while using name, ID, code, type as filter. A Pipe, called SearchPipe was implemented to develop the filter.
+
+## Call for API
+
+Thecall for the public API was made through a http GET request.
+
+
