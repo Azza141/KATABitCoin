@@ -1,0 +1,26 @@
+h6,a {
+    cursor: pointer;
+}
+.container {
+    border-radius: 1px;
+    border: 32px;
+    height: 90%;
+    width: 90%;
+    text-align: center;
+    background-color: #cfdce4;
+    padding: 50px;
+  
+    .card {
+      background-color: #2188bd;
+      color: #003366;
+      font-family: Gotham-bold;
+      font-weight: bold;
+
+  
+      .card-body {
+        font-weight: bold;
+        font-family: gotham;
+  
+      }
+    }
+}
